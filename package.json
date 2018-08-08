@@ -1,0 +1,33 @@
+{
+  "name": "newspaperapi",
+  "version": "1.0.0",
+  "description": "A project to globalize news all over the world",
+  "main": "app.js",
+  "scripts": {
+    "test": "test serve"
+  },
+  "author": "Syed Sabih Ur Rehman",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.2",
+    "jsonwebtoken": "^8.3.0",
+    "koa-combine-routers": "^0.1.1",
+    "koa-json": "^2.0.2",
+    "koa-router": "^7.3.0",
+    "mongoose": "^4.13.7",
+    "mongoose-deep-populate": "^3.0.0",
+    "nodemon": "^1.18.3"
+  },
+  "devDependencies": {
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-config-google": "^0.9.1",
+    "eslint-config-standard": "^11.0.0-beta.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1"
+  }
+}
