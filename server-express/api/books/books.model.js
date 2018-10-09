@@ -4,10 +4,15 @@ const ServiceManager = require('../../service_manager/requiredModules');
 let BookSchema = ServiceManager.mongoose.Schema({
     'name': String,
     'details': String,
-    'images': { type: Array, "default": [] },
+    'images': { 
+        type: Array,
+        "default": String,
+        "orignalPics" : Array
+     },
     'price': Number,
     'userId': String,
-    'bookAuthor': String
+    'bookAuthor': String,
+    'bookTitle': String
 });
 
 BookSchema.plugin(ServiceManager.deepPopulate);

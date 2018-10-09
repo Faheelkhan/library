@@ -12,3 +12,29 @@ exports.createBook = (query) => {
         });
     });
 };
+
+exports.getAllBooks = (query) => {
+    return new Promise((resolve, err) => {
+        books.find(query)
+            .exec((err, books) => {
+                if (err) {
+                    reject(err);
+                } else {
+                    resolve(books);
+                };
+            });
+    });
+};
+
+exports.deleteAllBooks = (query) => {
+    return new Promise((resolve, err) => {
+            books.deleteMany({})
+                .exec((err, books) => {
+                    if (err) {
+                        reject(err);
+                    } else {
+                        resolve(books);
+                    };
+                });
+    })
+}
