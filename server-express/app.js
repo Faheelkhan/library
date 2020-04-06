@@ -3,7 +3,7 @@ const ServiceManager = require('./service_manager/requiredModules');
 const port = process.env.PORT || 3000;
 
 /** DATABASE CONNECTION */
-ServiceManager.mongoose.connection.openUri('mongodb://administer:administer1@ds113442.mlab.com:13442/plantation');
+ServiceManager.mongoose.connection.openUri('');
 ServiceManager.mongoose.connection.on('connected', () => {
     console.log('Connected Database ' + ServiceManager.config.database);
 })
