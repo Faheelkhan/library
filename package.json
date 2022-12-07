@@ -10,9 +10,9 @@
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
-    "body-parser": "^1.18.2",
+    "body-parser": "^1.20.1",
     "cors": "^2.8.4",
-    "express": "^4.16.2",
+    "express": "^4.18.2",
     "jsonwebtoken": "^8.3.0",
     "koa-combine-routers": "^0.1.1",
     "koa-json": "^2.0.2",
